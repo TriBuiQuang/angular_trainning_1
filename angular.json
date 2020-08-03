@@ -28,9 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "./node_modules/bootstrap/dist/css/bootstrap.css"
+              }
             ],
-            "scripts": []
+            "scripts": [
+              
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angulartrainning"
+    }
+  },
+  "defaultProject": "angulartrainning",
+  "cli": {
+    "analytics": "63680361-72ac-4fa5-b8f3-e882ccb8929c"
+  }
 }
