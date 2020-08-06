@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HelloComponent } from './hello/hello.component';
-import '../assets';;
+
+import { HelloComponent } from './modules/hello/hello.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +16,12 @@ import '../assets';;
     FooterComponent,
     HelloComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule.forRoot()],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

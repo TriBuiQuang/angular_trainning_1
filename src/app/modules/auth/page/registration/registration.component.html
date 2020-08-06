@@ -1,0 +1,39 @@
+<div class="container-fluid">
+   <div class="row justify-content-md-center">
+      <div class="col-md-6 ">
+
+         <div class="card bg-primary text-white mt-3">
+            <h5 class="card-header">Registration</h5>
+            <div class="card-body">
+               <form>
+                  <div class="form-group">
+                     <label for="UserName">Username</label>
+                     <input type="email" class="form-control" id="UserName" aria-describedby="emailHelp"
+                        placeholder="Username@gmail.com">
+                  </div>
+                  <div class="form-group">
+                     <label for="password">Password</label>
+                     <input type="password" class="form-control" id="password" placeholder="Password...">
+                  </div>
+                  <div class="form-group">
+                     <label for="re-password">Re-password</label>
+                     <input type="password" class="form-control" id="re-password" placeholder="Re-password...">
+                  </div>
+                  <button type="button" class="btn btn-info col-md-5" (click)="Registration($event)">
+                     Registration
+                  </button>
+                  <button type="button" class="btn btn-success col-md-5 float-md-right" (click)="Login()">
+                     Had a account?
+                  </button>
+               </form>
+            </div>
+            <div class="card-footer">
+               <p class="text-danger">User error</p>
+               <p class="text-danger">User password</p>
+               <p class="text-danger">User error</p>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</div>
